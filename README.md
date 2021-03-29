@@ -1,14 +1,12 @@
-# Default starter for Gridsome
+# Página pessoal marcmatias desenvolvida com Gridsome
 
-This is the project you get when you run `gridsome create new-project`.
+Minha página pessoal utilizando como base o thema starter blog https://gridsome.org/starters/gridsome-blog-starter
 
-### 1. Install Gridsome CLI tool if you don't have
+### 1. Para executar o projeto localmente
 
-`npm install --global @gridsome/cli`
+`npm install`
+`npm run develop`
 
-### 2. Create a Gridsome project
+### Acesse o projeto
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+link do projeto online: https://marcmatias.github.io
