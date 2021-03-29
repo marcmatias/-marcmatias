@@ -39,7 +39,7 @@ module.exports = {
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       anchorClassName: 'icon icon-link',
       plugins: [
-        '@gridsome/remark-prismjs', 'gridsome-plugin-seo',
+        '@gridsome/remark-prismjs',
         ['gridsome-plugin-remark-youtube', { width: '100%', align: 'auto' }]
       ]
     }

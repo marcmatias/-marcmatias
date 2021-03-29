@@ -9,7 +9,7 @@
 
 		<p class="author__site-description">
 			<!-- {{ $static.metadata.siteDescription }} -->
-			Desenvolvedor de software, bacharel em Sistemas Para Internet, atualmente desenvolvendo projetos do <a target="blank" href="//brasil.io">Brasilio</a>. &nbsp;
+			Engenheiro de software, bacharel em Sistemas Para Internet, atualmente desenvolvendo projetos do <a target="blank" href="//brasil.io">Brasilio</a>.
 			<a target="blank" href="//twitter.com/search?q=%23python"> #Python</a>&nbsp;
 			<a target="blank" href="//twitter.com/search?q=%23javascript">#Javascript</a>&nbsp;
 			<a target="blank" href="//twitter.com/search?q=%23freesoftware">#Freesoftware</a>&nbsp;
@@ -48,7 +48,6 @@
 query {
   metadata {
     siteName
-	siteDescription
   }
 }
 </static-query>
