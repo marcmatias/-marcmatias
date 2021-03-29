@@ -1,8 +1,8 @@
-# Marcmatias webpage and blog
+# Marcmatias webpage e blog
 
 Minha página pessoal disponível em https://marcmatias.github.io
 
-## How It's Made:
+## Como é feito:
 
 **Tech used:** Gridsome, JavaScript, Vue.js, HTML e SCSS
 
