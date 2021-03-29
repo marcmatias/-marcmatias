@@ -1,14 +1,23 @@
-# Default starter for Gridsome
+# Marcmatias webpage e blog
 
-This is the project you get when you run `gridsome create new-project`.
+Minha página pessoal disponível em https://marcmatias.github.io
 
-### 1. Install Gridsome CLI tool if you don't have
+## Como é feito:
 
-`npm install --global @gridsome/cli`
+**Tech used:** Gridsome, JavaScript, Vue.js, HTML e SCSS
 
-### 2. Create a Gridsome project
+Sistema desenvolvido utilizado como base a própria docmuentação do Gridsome
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+## O que vi e aprendidi:
+
+É interessante a rapidez no desenvolvimento de páginas com o Gridsome. Modificações no código tem uma resposta muito rápida na atualização do que é exibido para o desenvolvedor tornando todo o processo de desenvolvimento mais fácil. A interface e as páginas como um todo ficam muito leves e rápidas e a documentação desse jamstack framework é muito bem escrita e intuitiva.
+
+## Links relevantes:
+
+Acesse meu perfil na plataforma
+
+**Starter utilizado como base para o tema:** https://gridsome.org/starters/gridsome-blog-starter/
+
+**Gridsome:** https://gridsome.org/
+
+**Vuejs:** https://vuejs.org/
