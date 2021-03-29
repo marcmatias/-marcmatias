@@ -6,8 +6,7 @@
 
 module.exports = {
 
-  siteName: 'marcmatias',
-  siteDescription: 'Esta é a minha página pessoal. Aqui você vai encontrar informações sobre minha carreira profissional acessando o card abaixo e também algumas postagens sobre tecnologia e conteúdo interessante que eu tenho estudado no menu Blog.',
+  siteName: 'marcmatias webpage',
 
   siteUrl: 'https://marcmatias.github.io',
 
@@ -33,7 +32,6 @@ module.exports = {
       }
     }
   ],
-
   transformers: {
     //Add markdown support to all file-system sources
     remark: {
@@ -41,7 +39,8 @@ module.exports = {
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       anchorClassName: 'icon icon-link',
       plugins: [
-        '@gridsome/remark-prismjs', ['gridsome-plugin-remark-youtube', { width: '100%', align: 'auto' }]
+        '@gridsome/remark-prismjs', 'gridsome-plugin-seo',
+        ['gridsome-plugin-remark-youtube', { width: '100%', align: 'auto' }]
       ]
     }
   }

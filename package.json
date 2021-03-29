@@ -12,8 +12,10 @@
     "@gridsome/remark-prismjs": "^0.5.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
+    "gh-pages": "^3.1.0",
     "gridsome": "^0.7.0",
     "gridsome-plugin-remark-youtube": "^1.0.1",
+    "gridsome-plugin-seo": "^1.0.1",
     "prismjs": "^1.23.0"
   },
   "devDependencies": {

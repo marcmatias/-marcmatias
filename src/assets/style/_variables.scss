@@ -11,6 +11,7 @@ body {
  	--body-color: #444;
  	--title-color: #111;
  	--link-color: #6b17e6;
+	--svg-color: rgb(22, 22, 22);
  	--border-color:  rgba(0,0,0,.1);;
   --space: 3.5rem;
   --content-width: 860px;
@@ -39,4 +40,5 @@ body[data-theme="dark"] {
  	--body-color: #ced8de;
  	--title-color: #fff;
  	--link-color: #af9cef;
+	--svg-color: rgb(231, 231, 231);
 }

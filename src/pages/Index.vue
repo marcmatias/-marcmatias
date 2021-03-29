@@ -44,7 +44,24 @@ export default {
     PostCard
   },
   metaInfo: {
-    title: 'marcmatias webpage'
+    title: 'marcmatias webpage',
+    seo: {
+      baseUrl: 'https://marcmatias.github.io',
+      title: 'Marcel Marques', // Uses the titleTemplate in Gridsome config
+      description: 'Página pessoal e blog do marcmatias',
+      keywords: 'opensource, python, javascript, internet',
+      image: '~/assets/images/avatar.png',
+      openGraph: {
+        title: 'Marcel Marques, página pessoal do marcmatias',
+        type: 'website'
+      },
+      twitter: {
+        title: 'Marcel Marques, página pessoal do @marcmatias',
+        type: 'Página pessoal e blog do usuário @marcmatias'
+      },
+      link: ['http://marcmatias.github.io'],   // any links
+      // script: []  // any scripts
+    }
   }
 }
 </script>
