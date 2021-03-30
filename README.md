@@ -6,7 +6,7 @@ Minha página pessoal disponível em https://marcmatias.github.io
 
 **Tech used:** Gridsome, JavaScript, Vue.js, HTML e SCSS
 
-Sistema desenvolvido utilizado como base a própria docmuentação do Gridsome
+Site desenvolvido utilizado como base a própria docmuentação do Gridsome
 
 ## O que vi e aprendi:
 
