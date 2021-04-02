@@ -6,9 +6,13 @@
 
 module.exports = {
 
-  siteName: 'marcmatias webpage',
+  siteName: 'marcmatias',
+
+  siteDescription: 'Experiências e pensamentos sobre programação',
 
   siteUrl: 'https://marcmatias.github.io',
+
+  author: 'Marcel Marques',
 
   templates: {
     Post: '/:title',

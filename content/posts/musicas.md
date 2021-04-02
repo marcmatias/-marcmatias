@@ -2,7 +2,7 @@
 title: Músicas
 date: 2020-08-30
 published: true
-tags: ["Música", "Conteúdo"]
+tags: ["Música", "Entretenimento"]
 series: false
 cover_image: ./images/coffee.jpg
 canonical_url: false
@@ -26,10 +26,6 @@ Preparar um bom cafe, ativar o PC e começar algum estudo ou atividade do trabal
 ＳＫＹＷＡＹ [ Chillwave - Synthwave - Retrowave Mix ]
 
 `youtube:https://www.youtube.com/embed/ICcFMBzOnYs`
-
-~ N I G H T D R I V E - 2 ~ A Synthwave Mix [Chillwave - Retrowave]
-
-`youtube:https://www.youtube.com/embed/v_F1rQ__RM8`
 
 ASTRO - A Synthwave Mix [Chillwave - Retrowave - Synthwave]
 

@@ -1,15 +1,15 @@
 <template>
 	<div class="author">
 
-		<g-image alt="Marcel" class="author__image" src="~/assets/images/avatar.png" width="180" height="180" blur="5" />
+		<g-image alt="Marcel" class="author__image" src="~/assets/images/author.jpg" width="180" height="180" blur="5" />
 
 		<h1 v-if="showTitle" class="author__site-title">
-			Marcel Marques
+			@marcmatias
 		</h1>
 
 		<p class="author__site-description">
 			<!-- {{ $static.metadata.siteDescription }} -->
-			Engenheiro de software, bacharel em Sistemas Para Internet, atualmente desenvolvendo projetos do <a target="blank" href="//brasil.io">Brasilio</a>.
+			Marcel Marques engenheiro de software, bacharel em Sistemas Para Internet e atualmente desenvolvendo projetos do <a target="blank" href="//brasil.io">Brasilio</a>.
 			<a target="blank" href="//twitter.com/search?q=%23python"> #Python</a>&nbsp;
 			<a target="blank" href="//twitter.com/search?q=%23javascript">#Javascript</a>&nbsp;
 			<a target="blank" href="//twitter.com/search?q=%23freesoftware">#Freesoftware</a>&nbsp;
@@ -48,6 +48,8 @@
 query {
   metadata {
     siteName
+  	siteUrl
+  	siteDescription
   }
 }
 </static-query>
