@@ -14,6 +14,7 @@ module.exports = {
 
   author: 'Marcel Marques',
 
+
   templates: {
     Post: '/:title',
     Tag: '/tag/:id'
@@ -21,13 +22,11 @@ module.exports = {
 
   plugins: [
     {
-      // Create posts from markdown files
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'Post',
         path: 'content/posts/*.md',
+        typeName: 'Post',
         refs: {
-          // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {
             typeName: 'Tag',
             create: true
@@ -37,7 +36,6 @@ module.exports = {
     }
   ],
   transformers: {
-    //Add markdown support to all file-system sources
     remark: {
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],

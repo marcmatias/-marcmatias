@@ -48,12 +48,41 @@ export default {
       title: this.$page.post.title,
       meta: [
         {
+          key: "twitter:title",
+          name: "twitter:title",
+          content: this.$page.metadata.siteName + " Blog",
+        },
+        {
+          key: "description",
           name: "description",
           content: this.$page.post.description,
         },
         {
-          name: "image",
-          content: this.$page.post.cover_image,
+          key: "twitter:image",
+          name: "twitter:image",
+          content:
+            this.$page.metadata.siteUrl + this.$page.post.cover_image.src,
+        },
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content: this.$page.post.description,
+        },
+        {
+          key: "og:title",
+          name: "og:title",
+          content: this.$page.metadata.siteName + " Blog",
+        },
+        {
+          key: "og:description",
+          name: "og:description",
+          content: this.$page.post.description,
+        },
+        {
+          key: "og:image",
+          name: "og:image",
+          content:
+            this.$page.metadata.siteUrl + this.$page.post.cover_image.src,
         },
       ],
     };
@@ -63,6 +92,11 @@ export default {
 
 <page-query>
 query Post ($id: ID!) {
+  metadata {
+  	siteName
+  	siteUrl
+  	siteDescription
+  }
   post: post (id: $id) {
     title
     path
