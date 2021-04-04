@@ -1,12 +1,12 @@
 ---
-title: Como atualizar meu fork com comando rebase
+title: Como atualizar fork com comando rebase
 date: 2021-04-03
 published: true
 tags: ["Git", "Programação"]
 series: false
 cover_image: ./images/git.jpg
 canonical_url: false
-description: "Guia com os comandos necessários para atualizar o meu fork com comando rebase."
+description: "Guia com os comandos necessários para atualizar o meu fork com rebase."
 ---
 
 **Atualizando fork com rebase**
