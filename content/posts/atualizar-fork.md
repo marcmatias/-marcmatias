@@ -6,7 +6,7 @@ tags: ["Git", "Programação"]
 series: false
 cover_image: ./images/git.jpg
 canonical_url: false
-description: "Guia com os comandos necessários para atualizar o meu fork com rebase."
+description: "Guia com os comandos necessários para atualizar fork com rebase."
 ---
 
 **Atualizando fork com rebase**
@@ -27,7 +27,7 @@ git fetch upstream
 git rebase upstream/master
 ```
 
-4. Agora é _**pushar**_ as mudanças do clone local para o repositório fork no GitHub
+4. Agora é _**pushar**_ as mudanças do clone local para o repositório fork no Git
 
 ```bash
 git push origin master

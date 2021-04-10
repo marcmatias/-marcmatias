@@ -12,9 +12,19 @@ export default function (Vue, { router, head, isClient }) {
 
   head.meta.push(
     {
+      key: 'google-site-verification',
+      name: 'google-site-verification',
+      content: `KIp4HBhrWREKmS7lQaS44Jd1nBIetiwlqAoSx2DVdJM`,
+    },
+    {
+      key: 'og:site_name',
+      name: 'og:site_name',
+      content: `marcmatias`,
+    },
+    {
       key: 'og:title',
       name: 'og:title',
-      content: `marcmatias`,
+      content: `marcmatias webpage`,
     },
     {
       key: 'og:description',

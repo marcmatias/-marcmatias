@@ -6,7 +6,7 @@
       </div>
 
       <div class="header__right">
-        <ToggleTheme />
+        <ToggleTheme :show-search="showSearch" />
       </div>
     </header>
 
@@ -33,6 +33,7 @@ import ToggleTheme from "~/components/ToggleTheme.vue";
 export default {
   props: {
     showLogo: { default: true },
+    showSearch: { default: true },
   },
   components: {
     Logo,
