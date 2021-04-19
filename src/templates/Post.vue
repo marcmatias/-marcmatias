@@ -178,7 +178,7 @@ query Post ($id: ID!) {
 /* Lists */
 .markdown ul,
 .markdown ol {
-  @apply mb-4 ml-5;
+  @apply mb-4 ml-5 text-lg;
 }
 .markdown li > p,
 .markdown li > ul,
