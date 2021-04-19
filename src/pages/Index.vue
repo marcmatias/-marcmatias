@@ -4,7 +4,7 @@
     <Author :show-title="true" />
 
     <!-- List posts -->
-    <div class="posts">
+    <div class="space-y-9 mb-10">
       <PostCard
         v-for="edge in $page.posts.edges"
         :key="edge.node.id"
@@ -21,7 +21,7 @@ query {
       node {
         id
         title
-        date (format: "D. MMMM YYYY")
+        date (format: "DD/MM/YYYY")
         timeToRead
         description
         cover_image (width: 770, height: 380, blur: 10)

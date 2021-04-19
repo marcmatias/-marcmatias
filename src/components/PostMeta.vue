@@ -1,8 +1,8 @@
 <template>
-  <div class="post-meta">
-    Posted {{ post.date }}.
+  <div class="text-gray-500 dark:text-gray-400 z-10 relative text-sm sm:text-base">
+    Postado {{ post.date }}.
     <template v-if="post.timeToRead">
-      <strong>{{ post.timeToRead }} min read.</strong>
+      <strong>{{ post.timeToRead }} min de leitura.</strong>
     </template>
   </div>
 </template>
@@ -12,10 +12,3 @@ export default {
   props: ["post"],
 };
 </script>
-
-<style lang="scss">
-.post-meta {
-  font-size: 0.8em;
-  opacity: 0.8;
-}
-</style>

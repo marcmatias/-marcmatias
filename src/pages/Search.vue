@@ -1,19 +1,20 @@
 <template>
   <Layout :show-logo="true" :show-search="false">
-    <h1 class="text-center">Pesquisa</h1>
-    <div class="author">
+    <h1 class="text-4xl font-medium text-center">Pesquisa</h1>
+    <div class="p-12 text-center">
       <input
         type="text"
         name="search"
         id="search"
         placeholder="Pesquisar..."
+        class="dark:text-gray-800 focus:outline-none focus:border-purple-600 border-2 focus:shadow-xl transition-all delay-300 shadow-md p-4 rounded-lg w-96"
         v-model="search"
       />
     </div>
 
     <!-- List posts -->
-    <div class="posts">
-      <div v-if="searchResults.length > 0">
+    <div>
+      <div class="space-y-9 mb-10" v-if="searchResults.length > 0">
         <PostCard
           v-for="result in searchResults"
           :key="result.node.id"
@@ -78,10 +79,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-#message {
-  padding: 60px 0;
-  font-size: 25px;
-}
-</style>

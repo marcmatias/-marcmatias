@@ -1,34 +1,36 @@
 <template>
   <Layout>
-    <div class="post-title">
-      <h1 class="post-title__text">
-        {{ $page.post.title }}
-      </h1>
+    <div>
+      <div class="text-center">
+        <h1 class="text-4xl font-medium pt-8 pb-6">
+          {{ $page.post.title }}
+        </h1>
 
-      <PostMeta :post="$page.post" />
-    </div>
-
-    <div class="post content-box">
-      <div class="post__header">
-        <g-image
-          alt="Cover image"
-          v-if="$page.post.cover_image"
-          :src="$page.post.cover_image"
-        />
+        <PostMeta class="pb-8 font-medium" :post="$page.post" />
       </div>
 
-      <div class="post__content" v-html="$page.post.content" />
+      <div class="bg-white dark:bg-gray-800">
+        <div>
+          <g-image
+            class="w-full rounded-t"
+            alt="Cover image"
+            v-if="$page.post.cover_image"
+            :src="$page.post.cover_image"
+          />
+        </div>
 
-      <div class="post__footer">
-        <PostTags :post="$page.post" />
+        <div class="px-7 sm:px-14 pb-6 sm:pb-12 pt-4 sm:pt-8">
+          <div class="markdown" v-html="$page.post.content" />
+          <PostTags :post="$page.post" />
+        </div>
       </div>
-    </div>
 
-    <div class="post-comments">
-      <!-- Add comment widgets here -->
-    </div>
+      <div>
+        <!-- Add comment widgets here -->
+      </div>
 
-    <Author class="post-author" />
+      <Author class="post-author" />
+    </div>
   </Layout>
 </template>
 
@@ -100,7 +102,7 @@ query Post ($id: ID!) {
   post: post (id: $id) {
     title
     path
-    date (format: "D. MMMM YYYY")
+    date (format: "DD/MM/YYYY")
     timeToRead
     tags {
       id
@@ -114,58 +116,104 @@ query Post ($id: ID!) {
 }
 </page-query>
 
-<style lang="scss">
-.post-title {
-  padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
-  text-align: center;
+
+<style>
+/* Markdown Styles */
+/* Global */
+.markdown {
+  @apply leading-relaxed;
 }
 
-.post {
-  &__header {
-    width: calc(100% + var(--space) * 2);
-    margin-left: calc(var(--space) * -1);
-    margin-top: calc(var(--space) * -1);
-    margin-bottom: calc(var(--space) / 2);
-    overflow: hidden;
-    border-radius: var(--radius) var(--radius) 0 0;
-
-    img {
-      width: 100%;
-    }
-
-    &:empty {
-      display: none;
-    }
-  }
-
-  &__content {
-    h2:first-child {
-      margin-top: 0;
-    }
-
-    p:first-of-type {
-      font-size: 1.2em;
-      color: var(--title-color);
-    }
-
-    img {
-      width: calc(100% + var(--space) * 2);
-      margin-left: calc(var(--space) * -1);
-      display: block;
-      max-width: none;
-    }
+@screen sm {
+  .markdown {
+    @apply text-lg;
   }
 }
 
-.post-comments {
-  padding: calc(var(--space) / 2);
+/* Headers */
+.markdown p:first-child {
+  @apply text-2xl py-4;
+}
+.markdown p:nth-child(2) {
+  @apply text-xl py-4;
+}
+.markdown .token.function {
+  @apply text-red-500
+}
+.markdown h1,
+.markdown h2 {
+  @apply text-xl my-6 font-semibold;
+}
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  @apply text-lg my-3 font-semibold;
+}
 
-  &:empty {
-    display: none;
+@screen sm {
+  .markdown h1,
+  .markdown h2 {
+    @apply text-2xl;
+  }
+  .markdown h3,
+  .markdown h4,
+  .markdown h5,
+  .markdown h6 {
+    @apply text-xl;
   }
 }
 
-.post-author {
-  margin-top: calc(var(--space) / 2);
+/* Links */
+.markdown a {
+  @apply text-purple-700 dark:text-purple-400;
 }
+.markdown a:hover {
+  @apply underline;
+}
+/* Paragraph */
+.markdown p {
+  @apply mb-4;
+}
+/* Lists */
+.markdown ul,
+.markdown ol {
+  @apply mb-4 ml-5;
+}
+.markdown li > p,
+.markdown li > ul,
+.markdown li > ol {
+  @apply mb-0;
+}
+.markdown ol {
+  @apply list-decimal;
+}
+.markdown ul {
+  @apply list-disc;
+}
+/* Blockquotes */
+.markdown blockquote {
+  @apply p-2 mx-6 bg-gray-100 mb-4 border-l-4 border-gray-400 italic;
+}
+.markdown blockquote > p {
+  @apply mb-0;
+}
+/* Tables */
+.markdown td,
+.markdown th {
+  @apply px-2 py-1 border border-gray-400;
+}
+.markdown tr:nth-child(odd) {
+  @apply bg-gray-100;
+}
+.markdown table {
+  @apply mb-6;
+}
+.markdown pre {
+  @apply py-8 mt-4 mb-6 rounded-md border border-yellow-100 dark:border-gray-700 bg-yellow-50 dark:bg-gray-900 overflow-x-auto;
+}
+.markdown code {
+  @apply p-8 text-base;
+}
+
 </style>

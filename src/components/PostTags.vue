@@ -1,7 +1,7 @@
 <template>
-  <div class="post-tags">
+  <div class="post-tags space-x-4 my-6 z-10 relative">
     <g-link
-      class="post-tags__link"
+      class="bg-gray-100 dark:bg-gray-900 rounded-xl p-2 font-medium text-gray-500 dark:text-gray-300 hover:opacity-60 transition-opacity duration-500"
       v-for="tag in post.tags"
       :key="tag.id"
       :to="tag.path"
@@ -16,20 +16,3 @@ export default {
   props: ["post"],
 };
 </script>
-
-<style lang="scss">
-.post-tags {
-  margin: 1em 0 0;
-
-  &__link {
-    margin-right: 0.7em;
-    font-size: 0.8em;
-    color: currentColor;
-    text-decoration: none;
-    background-color: var(--bg-color);
-    color: currentColor !important; //Todo: remove important;
-    padding: 0.5em;
-    border-radius: var(--radius);
-  }
-}
-</style>

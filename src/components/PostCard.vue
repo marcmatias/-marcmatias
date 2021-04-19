@@ -1,24 +1,27 @@
 <template>
   <div
-    class="post-card content-box"
-    :class="{ 'post-card--has-poster': post.poster }"
+    class="hover:-translate-y-1 mx-4 transform duration-500 bg-white dark:bg-gray-800 rounded-xl hover:shadow-xl"
   >
-    <div class="post-card__header">
+    <div>
       <g-image
         alt="Cover image"
         v-if="post.cover_image"
-        class="post-card__image"
+        class="w-full rounded-t"
         :src="post.cover_image"
       />
     </div>
-    <div class="post-card__content">
-      <h2 class="post-card__title" v-html="post.title" />
-      <p class="post-card__description" v-html="post.description" />
+    <div class="px-7 sm:px-14 pb-6 sm:pb-12 pt-4 sm:pt-8">
+      <h2 class="text-2xl md:text-4xl font-medium pb-5" v-html="post.title" />
+      <p class="text-lg md:text-xl pb-5" v-html="post.description" />
 
-      <PostMeta class="post-card__meta" :post="post" />
-      <PostTags class="post-card__tags" :post="post" />
+      <PostMeta :post="post" />
+      <PostTags :post="post" />
 
-      <g-link class="post-card__link" :to="post.path">Link</g-link>
+      <g-link
+        class="absolute w-full h-full opacity-0 overflow-hidden z-0 top-0 left-0"
+        :to="post.path"
+        >Link</g-link
+      >
     </div>
   </div>
 </template>
@@ -35,53 +38,3 @@ export default {
   props: ["post"],
 };
 </script>
-
-<style lang="scss">
-.post-card {
-  margin-bottom: var(--space);
-  position: relative;
-
-  &__header {
-    margin-left: calc(var(--space) * -1);
-    margin-right: calc(var(--space) * -1);
-    margin-bottom: calc(var(--space) / 2);
-    margin-top: calc(var(--space) * -1);
-    overflow: hidden;
-    border-radius: var(--radius) var(--radius) 0 0;
-
-    &:empty {
-      display: none;
-    }
-  }
-
-  &__image {
-    min-width: 100%;
-  }
-
-  &__title {
-    margin-top: 0;
-  }
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, 0.1);
-  }
-
-  &__tags {
-    z-index: 1;
-    position: relative;
-  }
-
-  &__link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    overflow: hidden;
-    text-indent: -9999px;
-    z-index: 0;
-  }
-}
-</style>

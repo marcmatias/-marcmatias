@@ -22,6 +22,15 @@ module.exports = {
 
   plugins: [
     {
+      use: "gridsome-plugin-tailwindcss",
+      options: {
+        tailwindConfig: './tailwind.config.js',
+        presetEnvConfig: {},
+        shouldImport: false,
+        shouldTimeTravel: false
+      }
+    },
+    {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'content/posts/*.md',

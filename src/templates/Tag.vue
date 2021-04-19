@@ -1,8 +1,8 @@
 <template>
   <Layout>
-    <h1 class="tag-title text-center space-bottom"># {{ $page.tag.title }}</h1>
+    <h1 class="text-4xl font-medium pb-12 text-center"># {{ $page.tag.title }}</h1>
 
-    <div class="posts">
+    <div class="space-y-9 mb-10">
       <PostCard
         v-for="edge in $page.tag.belongsTo.edges"
         :key="edge.node.id"
@@ -49,7 +49,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-</style>
-

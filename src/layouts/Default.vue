@@ -1,26 +1,34 @@
 <template>
   <div id="app">
-    <header class="header">
-      <div class="header__left">
+    <header
+      class="flex justify-between items-center p-8 bg-transparent top-0 z-10 xl:sticky"
+    >
+      <div class="flex items-center">
         <Logo v-if="showLogo" />
       </div>
 
-      <div class="header__right">
+      <div class="flex items-center">
         <ToggleTheme :show-search="showSearch" />
       </div>
     </header>
 
-    <main class="main">
+    <main class="max-w-4xl mx-auto">
       <slot />
     </main>
 
-    <footer class="footer">
-      <span class="footer__copyright"
-        >Copyleft <span class="copyleft">&copy;</span>
+    <footer class="flex justify-center p-8 text-lg">
+      <span
+        >Copyleft <span class="transform rotate-180 inline-block">&copy;</span>
         {{ new Date().getFullYear() }}.
       </span>
-      <span class="footer__links"
-        >Powered by <a href="//gridsome.org"> Gridsome </a></span
+      <span
+        >Powered by
+        <a
+          class="underline hover:opacity-50 transition-opacity duration-300"
+          href="//gridsome.org"
+        >
+          Gridsome
+        </a></span
       >
     </footer>
   </div>
@@ -41,54 +49,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: var(--header-height);
-  padding: 0 calc(var(--space) / 2);
-  top: 0;
-  z-index: 10;
-
-  &__left,
-  &__right {
-    display: flex;
-    align-items: center;
-  }
-
-  @media screen and (min-width: 1300px) {
-    //Make header sticky for large screens
-    position: sticky;
-    width: 100%;
-  }
-}
-
-.main {
-  margin: 0 auto;
-  padding: 1.5vw 15px 0;
-}
-
-.copyleft {
-  display: inline-block;
-  transform: rotate(180deg);
-}
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: calc(var(--space) / 2);
-  text-align: center;
-  font-size: 0.8em;
-
-  > span {
-    margin: 0 0.35em;
-  }
-
-  a {
-    color: currentColor;
-  }
-}
-</style>

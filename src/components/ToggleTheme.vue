@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="space-x-4 sm:pr-6">
     <button
       role="button"
       aria-label="Search"
       @click="$router.push('/search')"
-      class="menu-icon"
+      class="focus:outline-none focus:text-purple-700 dark:focus:text-purple-400"
       v-if="showSearch"
     >
       <svg
@@ -24,7 +24,7 @@
       role="button"
       aria-label="Toggle dark/light"
       @click.prevent="toggleTheme"
-      class="menu-icon"
+      class="focus:outline-none focus:text-purple-700 dark:focus:text-purple-400"
     >
       <svg
         v-if="darkTheme"
@@ -81,7 +81,6 @@ export default {
   methods: {
     toggleTheme() {
       this.darkTheme = !this.darkTheme;
-
       // This is using a script that is added in index.html
       window.__setPreferredTheme(this.darkTheme ? "dark" : "light");
     },
@@ -89,21 +88,16 @@ export default {
   mounted() {
     if (window.__theme == "dark") this.darkTheme = true;
   },
+  updated() {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  },
 };
 </script>
-
-<style lang="scss">
-.menu-icon {
-  background-color: transparent;
-  border: 0;
-  color: var(--body-color);
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.8;
-  }
-  &:focus {
-    outline: none;
-  }
-}
-</style>
