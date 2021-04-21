@@ -9,11 +9,11 @@ canonical_url: false
 description: "Músicas que encontrei no youtube que vale a pena ser guardadas para ouvir mais vezes."
 ---
 
-_Apanhado de músicas que encontrei no youtube que vale a pena ser guardadas para ouvir mais vezes._
+# Apanhado de músicas que encontrei no youtube que vale a pena ser guardadas para ouvir mais vezes.
 
 Preparar um bom cafe, ativar o PC e começar algum estudo ou atividade do trabalho fica melhor quando tem uma boa trilha sonora para acompanahar e promover um clima agradável no ambiente.
 
-**Segue alguns vídeos que encontrei no youtube com ótimas trilhas:**
+## Segue alguns vídeos que encontrei no youtube com ótimas trilhas:
 
 ~ N I G H T D R I V E ~ A Synthwave Music Video Mix [Chillwave - Retrowave\*\*
 

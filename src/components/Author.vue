@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-10 md:pb-14 mx-4 pt-8 space-y-5">
+  <div class="pb-10 md:pb-12 mx-4 pt-8 space-y-5">
     <g-image
       alt="Marcel"
       class="rounded-full mx-auto"
@@ -22,32 +22,27 @@
         Internet e atualmente desenvolvendo projetos do
         <a
           target="blank"
-          class="text-purple-700 dark:text-purple-400 hover:opacity-50 transition-opacity duration-300"
           href="//brasil.io"
           >Brasilio</a
         >&nbsp;
         <a
           target="blank"
-          class="text-purple-700 dark:text-purple-400 hover:opacity-50 transition-opacity duration-300"
           href="//twitter.com/search?q=%23python"
         >
           #Python</a
         >&nbsp;
         <a
           target="blank"
-          class="text-purple-700 dark:text-purple-400 hover:opacity-50 transition-opacity duration-300"
           href="//twitter.com/search?q=%23javascript"
           >#Javascript</a
         >&nbsp;
         <a
           target="blank"
-          class="text-purple-700 dark:text-purple-400 hover:opacity-50 transition-opacity duration-300"
           href="//twitter.com/search?q=%23freesoftware"
           >#Freesoftware</a
         >&nbsp;
         <a
           target="blank"
-          class="text-purple-700 dark:text-purple-400 hover:opacity-50 transition-opacity duration-300"
           href="//twitter.com/search?q=%23opensource"
           >#Opensource</a
         >
@@ -57,7 +52,7 @@
     <div class="flex flex-row justify-center space-x-5">
       <a
         target="_blank"
-        class="hover:opacity-60 transition-opacity duration-300 fill-current dark:text-gray-50"
+        class="hover:opacity-60 transition-opacity duration-300 fill-current dark:text-gray-50 text-gray-800"
         href="//codepen.io/marcmatias"
         title="Codepen"
       >
@@ -69,7 +64,7 @@
       </a>
       <a
         target="_blank"
-        class="hover:opacity-60 transition-opacity duration-300 fill-current dark:text-gray-50"
+        class="hover:opacity-60 transition-opacity duration-300 fill-current dark:text-gray-50 text-gray-800"
         href="//github.com/marcmatias"
         title="GitHub"
       >
@@ -81,7 +76,7 @@
       </a>
       <a
         target="_blank"
-        class="hover:opacity-60 transition-opacity duration-300 fill-current dark:text-gray-50"
+        class="hover:opacity-60 transition-opacity duration-300 fill-current dark:text-gray-50 text-gray-800"
         href="//www.linkedin.com/in/marcel-matias-836a04208/"
         title="linkedin"
       >
@@ -93,7 +88,7 @@
       </a>
       <a
         target="_blank"
-        class="hover:opacity-60 transition-opacity duration-300 fill-current dark:text-gray-50"
+        class="hover:opacity-60 transition-opacity duration-300 fill-current dark:text-gray-50 text-gray-800"
         href="//twitter.com/marcmatias"
         title="Twitter"
       >

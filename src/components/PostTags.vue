@@ -1,7 +1,7 @@
 <template>
-  <div class="post-tags space-x-2 my-6 z-10 relative">
+  <div class="space-x-2 my-6 relative">
     <g-link
-      class="bg-gray-100 dark:bg-gray-900 rounded-xl p-2 font-medium text-gray-500 dark:text-gray-300 hover:opacity-60 transition-opacity duration-500"
+      class="bg-gray-50 dark:bg-gray-900 shadow hover:shadow-xl hover:opacity-100 transition-shadow duration-500 rounded-xl p-2 hover:no-underline font-medium text-gray-600 dark:text-gray-300"
       v-for="tag in post.tags"
       :key="tag.id"
       :to="tag.path"

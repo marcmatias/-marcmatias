@@ -119,7 +119,6 @@ query Post ($id: ID!) {
 
 <style>
 /* Markdown Styles */
-/* Global */
 .markdown {
   @apply leading-relaxed;
 }
@@ -131,14 +130,11 @@ query Post ($id: ID!) {
 }
 
 /* Headers */
-.markdown p:first-child {
-  @apply text-2xl py-4;
-}
 .markdown p:nth-child(2) {
   @apply text-xl py-4;
 }
 .markdown .token.function {
-  @apply text-red-500
+  @apply text-red-500;
 }
 .markdown h1,
 .markdown h2 {
@@ -152,10 +148,10 @@ query Post ($id: ID!) {
 }
 
 @screen sm {
-  .markdown h1,
-  .markdown h2 {
+  .markdown h1 {
     @apply text-2xl;
   }
+  .markdown h2,
   .markdown h3,
   .markdown h4,
   .markdown h5,
@@ -164,13 +160,6 @@ query Post ($id: ID!) {
   }
 }
 
-/* Links */
-.markdown a {
-  @apply text-purple-700 dark:text-purple-400;
-}
-.markdown a:hover {
-  @apply underline;
-}
 /* Paragraph */
 .markdown p {
   @apply mb-4;
@@ -215,5 +204,4 @@ query Post ($id: ID!) {
 .markdown code {
   @apply p-8 text-base;
 }
-
 </style>

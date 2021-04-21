@@ -9,7 +9,7 @@ canonical_url: false
 description: "Guia com os comandos necessários para atualizar fork com rebase."
 ---
 
-**Atualizando fork com rebase**
+# Atualizando fork com rebase
 
 _Guia com os comandos necessários para atualizar o fork com comando rebase._
 
@@ -35,7 +35,7 @@ git push origin master
 
 5. Na página do repositório fork no github será possível ver a informação de que agora está seu estado é de _even (in sync)_, ou seja, sincronizado com o repositório de origem.
 
-**Fontes**
+## Fontes
 - [https://medium.com/@topspinj/how-to-git-rebase-into-a-forked-repo-c9f05e821c8a](https://medium.com/@topspinj/how-to-git-rebase-into-a-forked-repo-c9f05e821c8a)
 - [https://timonweb.com/misc/how-to-update-a-forked-repo-from-an-upstream-with-git-rebase-or-merge/](https://timonweb.com/misc/how-to-update-a-forked-repo-from-an-upstream-with-git-rebase-or-merge/)
 

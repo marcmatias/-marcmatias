@@ -22,11 +22,16 @@ query Tag ($id: ID!) {
           ...on Post {
             title
             path
-            date (format: "D. MMMM YYYY")
+            date (format: "DD/MM/YYYY")
             timeToRead
             description
             content
-            cover_image (width: 770, height: 380, blur: 10)
+            cover_image
+            tags {
+              id
+              title
+              path
+            }
           }
         }
       }

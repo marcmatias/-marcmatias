@@ -7,7 +7,7 @@
         name="search"
         id="search"
         placeholder="Pesquisar..."
-        class="dark:text-gray-800 focus:outline-none focus:border-purple-600 border-2 focus:shadow-xl transition-all delay-300 shadow-md p-4 rounded-lg w-72 lg:w-96"
+        class="dark:text-gray-800 outline-none focus:border-purple-600 border-2 focus:shadow-xl transition-all delay-300 shadow-md p-4 rounded-lg w-72 lg:w-96"
         v-model="search"
       />
     </div>
@@ -35,10 +35,10 @@ query {
       node {
         id
         title
-        date (format: "D. MMMM YYYY")
+        date (format: "DD/MM/YYYY")
         timeToRead
         description
-        cover_image (width: 770, height: 380, blur: 10)
+        cover_image
         path
         tags {
           id

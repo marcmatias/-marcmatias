@@ -1,18 +1,15 @@
 <template>
   <div id="app">
-    <header
-      class="flex justify-between items-center p-8 top-0 z-10 xl:sticky"
-    >
+    <header class="flex justify-between items-center p-8 top-0 xl:sticky">
       <div class="flex">
         <Logo v-if="showLogo" />
       </div>
-
+      
       <div class="flex items-center">
         <ToggleTheme :show-search="showSearch" />
       </div>
     </header>
-
-    <main class="max-w-4xl mx-auto">
+    <main class="max-w-4xl mx-auto bg-local">
       <slot />
     </main>
 
@@ -24,7 +21,7 @@
       <span
         >Powered by
         <a
-          class="underline hover:opacity-50 transition-opacity duration-300"
+          class="underline text-gray-500 hover:opacity-70 transition-opacity duration-300"
           href="//gridsome.org"
         >
           Gridsome
@@ -49,3 +46,12 @@ export default {
   },
 };
 </script>
+
+<style>
+a {
+  @apply text-purple-700 dark:text-purple-400;
+}
+a:hover {
+  @apply underline opacity-80;
+}
+</style>

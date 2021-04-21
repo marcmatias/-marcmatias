@@ -4,27 +4,30 @@
       role="button"
       aria-label="Search"
       @click="$router.push('/search')"
-      class="focus:outline-none focus:text-purple-700 dark:focus:text-purple-400"
+      class="focus:outline-none focus:text-purple-400 hover:opacity-75 duration-300"
       v-if="showSearch"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
+        fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
-        stroke-width="1.4"
       >
         <path
-          d="M18.109,17.776l-3.082-3.081c-0.059-0.059-0.135-0.077-0.211-0.087c1.373-1.38,2.221-3.28,2.221-5.379c0-4.212-3.414-7.626-7.625-7.626c-4.212,0-7.626,3.414-7.626,7.626s3.414,7.627,7.626,7.627c1.918,0,3.665-0.713,5.004-1.882c0.006,0.085,0.033,0.17,0.098,0.234l3.082,3.081c0.143,0.142,0.371,0.142,0.514,0C18.25,18.148,18.25,17.918,18.109,17.776zM9.412,16.13c-3.811,0-6.9-3.089-6.9-6.9c0-3.81,3.089-6.899,6.9-6.899c3.811,0,6.901,3.09,6.901,6.899C16.312,13.041,13.223,16.13,9.412,16.13z"
-        ></path>
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+        />
       </svg>
     </button>
     <button
       role="button"
       aria-label="Toggle dark/light"
       @click.prevent="toggleTheme"
-      class="focus:outline-none focus:text-purple-700 dark:focus:text-purple-400"
+      class="focus:outline-none focus:text-purple-400 hover:opacity-75 duration-300"
     >
       <svg
         v-if="darkTheme"
@@ -81,12 +84,11 @@ export default {
   methods: {
     toggleTheme() {
       this.darkTheme = !this.darkTheme;
-      // This is using a script that is added in index.html
-      window.__setPreferredTheme(this.darkTheme ? "dark" : "light");
+      localStorage.theme = this.darkTheme ? "dark" : "light";
     },
   },
   mounted() {
-    if (window.__theme == "dark") this.darkTheme = true;
+    if (localStorage.theme == "dark") this.darkTheme = true;
   },
   updated() {
     if (

@@ -1,6 +1,7 @@
 <template>
   <Layout :show-logo="false">
     <!-- Author intro -->
+    
     <Author :show-title="true" />
 
     <!-- List posts -->
@@ -24,7 +25,7 @@ query {
         date (format: "DD/MM/YYYY")
         timeToRead
         description
-        cover_image (width: 770, height: 380, blur: 10)
+        cover_image
         path
         tags {
           id
