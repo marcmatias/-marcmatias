@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <header
-      class="flex justify-between items-center p-8 bg-transparent top-0 z-10 xl:sticky"
+      class="flex justify-between items-center p-8 top-0 z-10 xl:sticky"
     >
-      <div class="flex items-center">
+      <div class="flex">
         <Logo v-if="showLogo" />
       </div>
 
@@ -16,10 +16,10 @@
       <slot />
     </main>
 
-    <footer class="flex justify-center p-8 text-lg">
+    <footer class="flex justify-center pb-8 text-lg">
       <span
         >Copyleft <span class="transform rotate-180 inline-block">&copy;</span>
-        {{ new Date().getFullYear() }}.
+        {{ new Date().getFullYear() }}.&nbsp;
       </span>
       <span
         >Powered by

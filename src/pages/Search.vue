@@ -7,7 +7,7 @@
         name="search"
         id="search"
         placeholder="Pesquisar..."
-        class="dark:text-gray-800 focus:outline-none focus:border-purple-600 border-2 focus:shadow-xl transition-all delay-300 shadow-md p-4 rounded-lg w-96"
+        class="dark:text-gray-800 focus:outline-none focus:border-purple-600 border-2 focus:shadow-xl transition-all delay-300 shadow-md p-4 rounded-lg w-72 lg:w-96"
         v-model="search"
       />
     </div>

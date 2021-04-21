@@ -15,7 +15,7 @@
     >
       @marcmatias
     </h1>
-    <div class="text-xl max-w-xl mx-auto text-justify">
+    <div class="text-lg md:text-xl max-w-xl mx-auto text-justify">
       <p>
         <!-- {{ $static.metadata.siteDescription }} -->
         Marcel Marques desenvolvedor de software, bacharel em Sistemas Para
