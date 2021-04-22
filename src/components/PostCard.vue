@@ -14,7 +14,7 @@
       <PostTags :post="post" />
     </div>
     <g-link
-      class="absolute w-full h-full overflow-hidden z-0 top-0 left-0 opacity-0 dark:hover:bg-purple-500 dark:hover:bg-opacity-10 duration-500"
+      class="absolute w-full h-full overflow-hidden z-0 top-0 left-0 opacity-0 dark:hover:bg-purple-500 dark:hover:bg-opacity-20 duration-500"
       :to="post.path"
     />
 
