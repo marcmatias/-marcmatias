@@ -4,7 +4,7 @@
     :style="`backgroundImage: url(${post.cover_image.src})`"
   >
     <div
-      class="px-7 sm:px-14 pb-20 sm:pb-24 pt-4 sm:pt-8 bg-white bg-opacity-80 dark:bg-gray-800 dark:bg-opacity-80 backdrop-filter backdrop-blur-md"
+      class="px-7 sm:px-14 pb-20 sm:pb-24 pt-4 sm:pt-8 bg-white bg-opacity-80 dark:bg-gray-800 dark:bg-opacity-80 backdrop-filter backdrop-blur-lg"
     >
       <h2 class="text-2xl md:text-4xl font-medium pb-5" v-html="post.title" />
       <p class="text-lg md:text-xl pb-3" v-html="post.description" />

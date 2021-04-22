@@ -9,7 +9,7 @@
         <PostMeta class="pb-8 font-medium" :post="$page.post" />
       </div>
 
-      <div class="bg-white dark:bg-gray-800">
+      <div class="bg-white dark:bg-gray-800 rounded">
         <div>
           <g-image
             class="w-full rounded-t"
@@ -19,9 +19,11 @@
           />
         </div>
 
-        <div class="px-7 sm:px-14 pb-6 sm:pb-12 pt-4 sm:pt-8">
+        <div class="px-7 sm:px-14 pb-9 pt-4 sm:pt-8">
           <div class="markdown" v-html="$page.post.content" />
-          <PostTags :post="$page.post" />
+          <div class="pt-4">
+            <PostTags :post="$page.post" />
+          </div>
         </div>
       </div>
 
@@ -123,10 +125,8 @@ query Post ($id: ID!) {
   @apply leading-relaxed;
 }
 
-@screen sm {
-  .markdown {
-    @apply text-lg;
-  }
+.markdown {
+  @apply text-lg;
 }
 
 /* Headers */
@@ -136,10 +136,10 @@ query Post ($id: ID!) {
 .markdown .token.function {
   @apply text-red-500;
 }
-.markdown h1,
-.markdown h2 {
+.markdown h1 {
   @apply text-xl my-6 font-semibold;
 }
+.markdown h2,
 .markdown h3,
 .markdown h4,
 .markdown h5,
