@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mx-4 pt-64 sm:pt-96 transform duration-500 text-gray-800 dark:text-white rounded-xl hover:shadow-xl transition-shadow shadow bg-no-repeat bg-cover bg-center overflow-hidden"
+    class="mx-4 pt-64 sm:pt-96 transform duration-500 text-gray-900 dark:text-white rounded-xl hover:shadow-xl transition-shadow shadow bg-no-repeat bg-cover bg-center overflow-hidden"
     :style="`backgroundImage: url(${post.cover_image.src})`"
   >
     <div
